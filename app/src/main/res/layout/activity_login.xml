@@ -7,9 +7,11 @@
     android:gravity="fill_vertical"
     android:orientation="vertical"
     android:weightSum="0"
-    tools:context="com.example.ryan.login.LoginActivity"
+    tools:context="com.boozehound.boozehound12.LoginActivity">
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="0dp">
+
+
     <VideoView
         android:id="@+id/videoView"
         android:layout_width="0dp"
@@ -20,20 +22,19 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.0"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="282dp"
         android:layout_height="167dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:adjustViewBounds="false"
-        android:background="@drawable/logo"
+        android:background="@drawable/whitelogo2"
         android:baselineAlignBottom="true"
         android:clickable="true"
         android:contextClickable="true"
@@ -46,56 +47,71 @@
         app:layout_constraintTop_toTopOf="@+id/videoView"
         app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/google_button"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="8dp"
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/button2"
+        style="?android:textAppearanceSmall"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:autoLink="phone"
-        android:backgroundTint="#d34836"
-        android:clickable="true"
-        android:contextClickable="false"
-        android:elevation="0dp"
-        android:text="SIGN IN WITH&#10;GOOGLE"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="@+id/guideline4"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:layout_constraintHorizontal_bias="0.509" />
+        app:layout_constraintVertical_bias="0.5" />
 
-    <Button
-        android:id="@+id/facebook"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="8dp"
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="#3b5998"
         android:clickable="true"
-        android:text="SIGN IN WITH&#10;FACEBOOK"
         android:textColor="#ffffff"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/google_button"
-        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.5" />
 
+    <Button
+        android:id="@+id/guestButton"
+        style="?android:textAppearanceSmall"
+        android:layout_width="221dp"
+        android:layout_height="37dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:clickable="true"
+        android:elevation="0dp"
+        android:text="Continue As Guest"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline7"
+        tools:layout_editor_absoluteY="491dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="40dp" />
+        app:layout_constraintGuide_begin="40dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="40dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline3"
@@ -151,26 +167,6 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="25dp" />
 
-    <TextView
-        android:id="@+id/guest"
-        android:layout_width="139dp"
-        android:layout_height="15dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="16dp"
-        android:clickable="true"
-        android:text="continue as guest"
-        android:textAllCaps="true"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
-        app:layout_constraintRight_toLeftOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline7"
-        tools:layout_conversion_absoluteHeight="0dp"
-        tools:layout_conversion_absoluteWidth="360dp"
-        tools:layout_conversion_absoluteX="0dp"
-        tools:layout_conversion_absoluteY="1100dp" />
 
 
 </android.support.constraint.ConstraintLayout>
