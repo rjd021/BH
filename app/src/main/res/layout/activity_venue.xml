@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/colorPrimary"
+    android:background="@color/colorAccent"
     android:orientation="vertical">
-
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         layout_editor_absoluteX="8dp"
         layout_editor_absoluteY="84dp"
         android:layout_width="382dp"
-        android:layout_height="71dp"
+        android:layout_height="75dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
@@ -28,35 +27,42 @@
 
     <Button
         android:id="@+id/location"
-        android:layout_width="41dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="24dp"
+        layout_editor_absoluteX="309dp"
+        layout_editor_absoluteY="13dp"
+        android:layout_width="30dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="16dp"
-        android:background="@android:drawable/ic_dialog_map"
+        android:background="@drawable/mapbtn"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintLeft_toRightOf="@+id/logoID"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/menu"
+        android:id="@+id/arrowBack"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="62dp"
-        android:layout_height="54dp"
+        layout_editor_absoluteX="28dp"
+        layout_editor_absoluteY="17dp"
+        android:layout_width="50dp"
+        android:layout_height="53dp"
         android:layout_marginBottom="0dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="24dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/hexagonwhite"
+        android:background="@drawable/arrow"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/logoID"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.888" />
+        app:layout_constraintVertical_bias="0.51" />
 
     <ImageView
         android:id="@+id/logoID"
+        layout_editor_absoluteX="0dp"
+        layout_editor_absoluteY="-25dp"
         android:layout_width="138dp"
         android:layout_height="70dp"
         android:layout_marginLeft="8dp"
@@ -70,65 +76,143 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="0dp"
-        android:layout_height="123dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="414dp"
+        android:layout_height="142dp"
         app:layout_constraintBottom_toTopOf="@+id/venueID"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/bar" />
 
     <TextView
         android:id="@+id/venueID"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginStart="24dp"
+        android:layout_width="224dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorAccent"
         android:fontFamily="sans-serif-condensed"
         android:text="12th Street Bar"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/dayOfThWeek"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/listView"
+        android:layout_marginTop="0dp"
+        app:layout_constraintVertical_bias="0.518"
+        android:layout_marginRight="0dp"
         app:layout_constraintRight_toRightOf="parent" />
 
     <Spinner
         android:id="@+id/dayOfThWeek"
-        android:layout_width="200dp"
-        android:layout_height="25dp"
+        android:layout_width="104dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginStart="24dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/listView" />
+        tools:layout_editor_absoluteY="245dp" />
 
     <android.support.constraint.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/guideline"
-        app:layout_constraintGuide_begin="20dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="20dp" />
+        app:layout_constraintGuide_begin="16dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="87dp"
+        android:layout_height="26dp"
+        android:background="@color/cardview_light_background"
+        android:fadingEdgeLength="@dimen/com_facebook_auth_dialog_corner_radius_oversized"
+        android:onClick="OnVenueClick"
+        android:text="Specials"
+        android:textColor="@color/Black"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/dayOfThWeek"
+        android:layout_marginTop="8dp" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/btmToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/btmtoolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/phone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/phnbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/favorite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/favbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintLeft_toRightOf="@+id/phone"
+        app:layout_constraintRight_toLeftOf="@+id/map" />
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/maps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/share" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/sharebtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/btmToolbar" />
 
     <ListView
         android:id="@+id/listView"
-        android:layout_width="wrap_content"
-        android:layout_height="226dp"
+        android:layout_width="388dp"
+        android:layout_height="216dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
 
 </android.support.constraint.ConstraintLayout>
