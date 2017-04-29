@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.amigold.fundapter.BindDictionary;
 import com.amigold.fundapter.FunDapter;
@@ -25,8 +26,11 @@ import java.util.ArrayList;
  */
 
 public class VenueActivity extends AppCompatActivity implements AsyncResponse {
+    private ArrayList<GetOffers> offerlist;
+    private ListView lvOffers;
+
     private ArrayList<GetVenue> venuelist;
-    private ListView lvVenue;
+    private TextView tsVenueName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +45,12 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
         //btn to call venue
         Button call = (Button) findViewById(R.id.phone);
 
-
+        PostResponseAsyncTask taskReadVenue = new PostResponseAsyncTask(VenueActivity.this, this);
+        taskReadVenue.execute("http://ryandeal.me/getVenue.php");
         PostResponseAsyncTask taskRead = new PostResponseAsyncTask(VenueActivity.this, this);
-        taskRead.execute("http://ryandeal.me/getVenue.php");
+        taskRead.execute("http://ryandeal.me/getSpecials.php");
+
+
 
         //Map button - open map page
         mapButton.setOnClickListener(new View.OnClickListener() {
@@ -91,8 +98,88 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
 
     }
 
+
+  /*  public int GetCurrentDay(//day){
+
+    //get current day
+    int dayCode;
+    String day;
+               Switch(day.toLowerCase){
+        case "sunday":
+                daycode = 0;
+        break;
+
+        case "monday":
+                daycode = 1;
+        break;
+
+        case "tuesday":
+                daycode = 2;
+        break;
+
+        case "wednesday":
+                daycode = 3;
+        break;
+
+        case "thursday":
+                daycode = 4;
+        break;
+
+        case "friday":
+                daycode = 5;
+        break;
+
+        case "saturday":
+                daycode = 6;
+        break;
+
+        ]
+        return dayCode;
+}
+*/
+
+
+
+
+
+
     @Override
     public void processFinish(String s) {
+
+        offerlist = new JsonConverter<GetOffers>().toArrayList(s, GetOffers.class);
+
+        BindDictionary<GetOffers> dict = new BindDictionary<GetOffers>();
+        dict.addStringField(R.id.HappyHourID, new StringExtractor<GetOffers>(){
+            @Override
+            public String getStringValue(GetOffers offers, int position){
+                return "" + offers.HappyHourID;
+            }
+       });
+
+        dict.addStringField(R.id.DrinkID, new StringExtractor<GetOffers>() {
+            @Override
+            public String getStringValue(GetOffers offers, int position) {
+                return "" + offers.DrinkID;
+            }
+        });
+        dict.addStringField(R.id.Price, new StringExtractor<GetOffers>() {
+            @Override
+            public String getStringValue(GetOffers offers, int position) {
+                return offers.Price;
+            }
+        });
+
+
+        FunDapter<GetOffers> adapter = new FunDapter<>
+                (VenueActivity.this, offerlist, R.layout.layout_venue, dict);
+
+        lvOffers = (ListView) findViewById(R.id.lvSpecials);
+        lvOffers.setAdapter(adapter);
+
+
+    }
+
+    public void processFinishGetVenueName(String s) {
 
         venuelist = new JsonConverter<GetVenue>().toArrayList(s, GetVenue.class);
 
@@ -118,12 +205,11 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
         });*/
 
 
-        FunDapter<GetVenue> adapter = new FunDapter<>
-                (VenueActivity.this, venuelist, R.layout.layout_main, dict);
+        FunDapter<GetVenue> adapterVenue = new FunDapter<>
+                (VenueActivity.this, venuelist, R.layout.activity_venue, dict);
 
-        lvVenue = (ListView) findViewById(R.id.lvVenue);
-        lvVenue.setAdapter(adapter);
-
+        tsVenueName = (TextView) findViewById(R.id.venueName);
+       // tsVenueName.setText(venuelist);
 
     }
 }
