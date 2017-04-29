@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -34,12 +35,18 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
             }
         });
     }
+
+    public void OnClickVenue (View view){
+
+        Intent appInfo = new Intent(MainMenu.this, VenueActivity.class);
+        startActivity(appInfo);
+    }
     @Override
     public void processFinish(String s) {
 
         venuelist = new JsonConverter<GetVenue>().toArrayList(s, GetVenue.class);
 
-       BindDictionary<GetVenue> dict = new BindDictionary<GetVenue>();
+        BindDictionary<GetVenue> dict = new BindDictionary<GetVenue>();
     /*    dict.addStringField(R.id.VenueID, new StringExtractor<GetVenue>(){
             @Override
             public String getStringValue(GetVenue venue, int position){
@@ -64,7 +71,7 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
         FunDapter<GetVenue> adapter = new FunDapter<>
                 (MainMenu.this, venuelist, R.layout.layout_main, dict);
 
-        lvVenue = (ListView)findViewById(R.id.lvVenue);
+        lvVenue = (ListView) findViewById(R.id.lvVenue);
         lvVenue.setAdapter(adapter);
 
         //venue strings
@@ -75,8 +82,8 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
         listView.setAdapter(adapter2);
 
 
-        // On click of venue String, open Venue page
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+         On click of venue String, open Venue page*/
+        lvVenue.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 Intent appInfo = new Intent(MainMenu.this, VenueActivity.class);
@@ -84,7 +91,7 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
             }
         });
 
-*/
+
 
 
 
@@ -94,8 +101,8 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
 
 
 
-
 }
+
 
 
 
