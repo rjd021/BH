@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.amigold.fundapter.BindDictionary;
 import com.amigold.fundapter.FunDapter;
@@ -37,6 +38,7 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
     }
 
     public void OnClickVenue (View view){
+        Toast.makeText(getApplicationContext(),"Hello Javatpoint",Toast.LENGTH_SHORT).show();
 
         Intent appInfo = new Intent(MainMenu.this, VenueActivity.class);
         startActivity(appInfo);
