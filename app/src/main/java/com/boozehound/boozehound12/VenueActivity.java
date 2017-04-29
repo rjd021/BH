@@ -1,21 +1,16 @@
 package com.boozehound.boozehound12;
 
 import android.content.Intent;
-import android.icu.text.SimpleDateFormat;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
 
 import java.util.Calendar;
-import java.util.Date;
 
 
 /**
@@ -43,7 +38,7 @@ public class VenueActivity extends AppCompatActivity {
         String[] venues = {"$2 Domestic Bottles", "$3 Wells", "Import/ Prem. Bottles", "$4 Calls"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, venues);
 
-        ListView listView = (ListView) findViewById(R.id.listView);
+        ListView listView = (ListView) findViewById(R.id.lvVenue);
         listView.setAdapter(adapter);
 
 

@@ -1,21 +1,19 @@
 package com.boozehound.boozehound12;
 
           import android.app.AlertDialog;
-          import android.content.Context;
-          import android.os.AsyncTask;
-          import android.widget.TextView;
+import android.content.Context;
+import android.os.AsyncTask;
 
-          import java.io.BufferedReader;
-          import java.io.BufferedWriter;
-          import java.io.IOException;
-          import java.io.InputStream;
-          import java.io.InputStreamReader;
-          import java.io.OutputStream;
-          import java.io.OutputStreamWriter;
-          import java.net.HttpURLConnection;
-          import java.net.MalformedURLException;
-          import java.net.URL;
-          import java.net.URLEncoder;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 
 /**
@@ -31,7 +29,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
     @Override
     protected String doInBackground(String... params) {
         String type = params[0];
-        String specials_url = "http://ryandeal.me/connSpecials.php";
+        String specials_url = "http://ryandeal.me/getLocation.php";
 
         if(type.equals("venue click")) {
             try {

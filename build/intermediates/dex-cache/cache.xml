@@ -3,21 +3,822 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Ryan\AndroidStudioProjects\BH\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        jar="C:\Users\Ryan\Desktop\BH\build\KGJsonConverter.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="C:\Users\Ryan\AndroidStudioProjects\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_d68a111a7d43dbd28e3978a28c51cca8e81fb867\classes.dex" />
+        sha1="cea743dc2e193922f7e7dc34858ef15b00afc6db">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\2\KGJsonConverter_5e76bc35d916273a2c5a115b9b4c219603a744a4\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Ryan\AndroidStudioProjects\BH\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        jar="C:\Users\Ryan\.android\build-cache\11f114fd4bc682e302680d00c4f00534ac7364fe\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="9fe8b00b03b71c7d30ece1467fc396a1b944e6a9">
-        <dex dex="C:\Users\Ryan\AndroidStudioProjects\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b2dab12ec9ac9f3d4538ca1873c7207ec4924587\classes.dex" />
+        sha1="e4851331b3944beb6e7f77316a7661f53781da62">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_28c8ff604940de6264ede2c58e4fc591c713c136\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\9feabb81d5fcd3bc701adcdef00f1bfd90ba8378\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3b40cab6988c1f949bfc4d105bf44e926a3c4655\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\d38638efb81a12af66eefca84e941d5abcf7f6a1\output\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_552a1fee0faf14ace709fe0fa5282b32fe6e2207\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\88351d9f519b80fb63f0e15345052595f0c4c95b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a7ffe939ffd830b5d4052f3c1c4c235923790ce">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d2870b52eed53863abbbf11dcc9f38b60030922a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\e2a774f8515c2e6b1514a4c9720f3cd1693d2c5b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_26d076c16223e375ba593f3cb252bca423c4a737\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\0fc282ca3007deec46cee8f73cf575462832d9da\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0a4112a2c5cc61d5a098b305032d318434242d54\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\b293139f4caf4f47a291d480235062b39afc066d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1bcf6c2bccc16b503b3c98121a5e37c35b657366\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\Desktop\BH\app\libs\GenAsync.1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0f5e48bcb980aa260360949d8c5bc5b348359ee2">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\2\GenAsync.1.2_2c82fe0be1aa505784a5934bd4d825f63c44e33b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\520c9645d6457563d01d545ade4b02237c11e350\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec7d3099b4e3cf23230c78acaae438f3371e1c19">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_43cce8a69faf2ea5199a24f4b77ccfca3559afac\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ryan\.android\build-cache\b293139f4caf4f47a291d480235062b39afc066d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\pre-dexed\debug\classes_1bcf6c2bccc16b503b3c98121a5e37c35b657366.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\d38638efb81a12af66eefca84e941d5abcf7f6a1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f409bb635c69b9b2255e7fe56e9cc4b37f08bbbd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\78b62ef2fa218f955e1f70703f5cdb7daa6d031c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a1aa1dd9917e887bfe732cc5e561ae6ae8f9a84a">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c7b50a89a37c1791056568d0713a530ba6dd8289\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\db6a922ef1473bd9443732f97c72062eca3a3c7c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3826817a4de1daa170c33bbc04db24ab6826bd5">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_682269c08aa8f988bb3711570faf8ca46ac17c07\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\Desktop\BH\build\gson-2.6.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\2\gson-2.6.2_166a3c2a6e2f8143d86942d4b383a4288cc0f0a1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\b1f352ee58f2acba1ad2fea2be94eafb3d4f9efb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6f233cb35a6ea92364130d2d48791c461ec65983">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_615c294326967b2929c63201099fdb18ac1bf3bf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\35e3cfca3114a419e19afb9966ac4bb7ef4d0991\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8dfe54fbaf4f2a27d395ddf806d0c011170999e0">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_20c594487bb25342cf1cc211ff0943ccadbb0d42\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\cc73e44b58bc60ca47ad986299b5d3a41a9d8dd6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1b66476cea35a20d5efdfecff399830887453852\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\00ef78868e2b60ec7d902990363658eb6136b28e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0ea53bbbb76d65bfbd5eeb2e17b6579d47a78374\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-applinks-1.4.0_ad5cf552beddb88c2b945d9d729bb8572153a13f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\8a608dacc93d4f77b71461d855d17bee10bcf0d8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44098e691b36776973374ac03afe0225b17f8a74">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_86d6c7a581e19015bf262471402fa6413c127f5d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\fd67b80933e81640f5bbf184d9505f18b60b9b71\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a5d5553c308643a9022f15513ebdd59e9c78d82">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f855f6fb5c4309de734f5d80f5a565368f8cc3df\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\7078f54c2439597d6b507188247a3327b8ccd92a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a61c00e6a0a6a37b9325b6ec69612977fb3808be\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\37670da42388e60e573957beaefbcec46455ec69\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7626a9aa507bbbdc16188bc9a9f9bf3370c1ddd">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6e67d75625a43514227cf2ef9d1955265bd5dfc3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\32618abb27e33c376cef52e4f1414828d52a128a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b32372f6821e003ae24cd3389bdd7925247f100">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1435c03030acb86ffbbed5177189e8c4dbbc2b33\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\614f424e7db336e28f6df926a974bf7dac3bed40\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="abf7c64e0bbaaa931738856734f76646ae62d9a5">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9dde8050a02f9077741d24279696d63bb0a3168d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\f13661fd119a245f82d4c8b898d583870bbac681\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b2349ddfe04831042844cbf055e5a072da37ddf8">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e5bfdd3c9fc30bb4f292a4c81cc692145b17a046\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ryan\.android\build-cache\205f83038dc0fbaf7583038e882ce628b874130f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\pre-dexed\debug\classes_07c71906348107a94aa0334fcfcfa630fcbe072d.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\Desktop\BH\app\libs\KGJsonConverter.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cea743dc2e193922f7e7dc34858ef15b00afc6db">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\2\KGJsonConverter_3003fd4f29d1482c0e19499453bd3e53c404331c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\a6756c39284b99876d091cbc9b12a2b8c8a6b7bc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d94c39080a309d1887f50ef68cc96dfe4bc9d01">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_19496d82c0ffda5b0901b30cbeb2b48c7fa9c517\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\ee556900309cb47e6649273eb6655de1f37b44c3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25f55515117e14a658120a7b01a9ea5170409db4">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_41e2153a7d54f0f65d5f402c106a3ce2c520c72f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\eb95dfb8b916330029a3869bdaab63dcf6dd71d3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6818f5804ca0b5eb089d902458faea4179eca1d">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bee28b44c1d568220a3cab2186c0f12ade91eeb7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\a5e80ed65aaeac25c8eb430f854621be475d101e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="536fd6afd6e1280607c5d70306eb32d385db7964">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a15cff6f4427ece495952156ef7b9915236b4513\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\0828917c4badd55ecbba67079f07c84eab93303d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efae381df589f3d4977c346c8a980f030315bb8b">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1504497bedd157bd804bb189143ff4e89d41adcb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\8fb33da9868595ce0e5661f6e7d6ceb9103d1d62\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b136ac09f209c1d91fec7db8518e33d4373c8f39">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0d403b0a9d84be9c2c3c95cad07c66d0df1edd48\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\f0dab746991054f70e9a1cf512804547b9e2ed94\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7ba26433d9e9f4429d83ff65ad79bfc801dc00a">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_569bc3145fd08ce44b7298db996e70a1f75e1964\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\0eb7b3744863997a5f537b667c48263306278241\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="888983f51cf34f57a93ff16832552f2f15937212">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6a6da697d29a32c7e264f54fd94eeca6d73d2c74\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\342ed193e1b5dd67d78bfaff2ba2467f6902f24b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0bb2f0934fa55799508ba58ffc9ba579b35744b8">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cdee1ec18158a825229d9c550ab0cab371ffdbc6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\f9eb55561b03c554fc2807e0a57986cc48a020f8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cfa47e1b140562d47bc670629d07e209cd8b02c4">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_92ec01269c3fb5bef47d95ac5c63a3c7cf5a22cc\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ryan\.android\build-cache\4b5cc11a91d2fc387039b6f952acf267f811578e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\pre-dexed\debug\classes_8a060b90492638c5d6cefe422a3892fdcdfdcb8a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\54ba2b9f9dace441c2d1addcfe6622aa54e80bf1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3683531139103cc263b71d8b5ac6062832a8fd30">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_91945601fce07c436f1cd03b4beaf3cbdfe2b80b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\726fa2bdc55bd07d785f6d99cb159f3bc28e127f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d67042688d34474a82fe4ef4c6514ef471377ef">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_35573adc03a18504136c6ed7134229ff72212e3c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\1bb0e51102527a1efe72c73b10e8fe1261f233cf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6c74dab42788b458960618238f338d324b6f0656">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0b04cd54c9546225903f5079b206f4e8d225d2ec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\16dd9ed9a9f12fac23d41df4a7ed93167172b426\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b108aa1a14a816d8ffd58cec1f55ea7d14485e6d\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ryan\.android\build-cache\16dd9ed9a9f12fac23d41df4a7ed93167172b426\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\pre-dexed\debug\classes_b108aa1a14a816d8ffd58cec1f55ea7d14485e6d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ryan\.android\build-cache\08f13a1327e4a219d7e85ab19a85c800c2e23aaf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\pre-dexed\debug\classes_8902f02b336d37d3a6167236ca6a7d9ca0f5d690.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\6cec337ea5d4579957755a1801e58eabbf88fa5c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d6e5f3f10010e4f286217dc955dab59bb9deb16f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\Desktop\BH\build\GenAsync.1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0f5e48bcb980aa260360949d8c5bc5b348359ee2">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\2\GenAsync.1.2_c6dac58b92315e9112690a2e24c459938392699c\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ryan\.android\build-cache\9d5bd8736e2009f549f7a55d0647797fed283273\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\pre-dexed\debug\classes_462055c68ba2eca72555ecb1b397779b2e391457.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\fa76c8c120ac996ac6083701c782b5b74739a9ad\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6bbd91a42b49c6a8ed88bb95f77d83961626a3ca\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\56ae077af25e4f064fa22aae91aa45f3132ca454\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="12e67307b10da7aad1bd09af41f281a2fed08d96">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a7033a9f6aef3bf5d3e2cd803fa8afbbfa118183\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\ed6756021de60fe6a5d0a95f9aabcb60b7e07a27\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="825c2e97a00df4df5b0f3081faa4fd6280cd7c72">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_051b518cc70743de1e42ae5bf8b2a1ee26a12c62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\205f83038dc0fbaf7583038e882ce628b874130f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_07c71906348107a94aa0334fcfcfa630fcbe072d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\73a4a80561dec667dc087e0c81f510262a598081\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="399f75732ff1ac159f9e73611536f1508bf18d3b">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_245fbcf76543e7aa944c2400507f7a354caba3db\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ryan\.android\build-cache\fa76c8c120ac996ac6083701c782b5b74739a9ad\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\pre-dexed\debug\classes_6bbd91a42b49c6a8ed88bb95f77d83961626a3ca.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\6c52e2e1cb0e07f85a8fb6dbf1d6e6a7a1e6a356\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5ee29abfc804ebd51d65a4bde424c0ee74363939">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_20135647236b4ad19b9995ac99adf49e229f640d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\d234008498a7f056a051781ee5b96c13dc0247dd\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dbae35d7fc3427d30bef0037bdf61ad0d8d984f8">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0d5a967ee629ff4ecdf99348b9dc7f4b222fd4fd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\08f13a1327e4a219d7e85ab19a85c800c2e23aaf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8902f02b336d37d3a6167236ca6a7d9ca0f5d690\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\b4a2f3ef2b01b41db7990d451703f7151b1c05b8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c3c7f923e1df76640acb3a24823600f034a5d226">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_16b8014230e0e82e4e5ca0c7d03b5f6a6344224e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\930317d41233b1c4f83cd2d23a681241be075968\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cce5792fa30ee8520620f298bf920309423b180f">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cc7cea6aadfde4e64ef3bf0588dc83712d82d626\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\68fab43d77f014e6341534941648ad50ae0aab18\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d81a3b0a16f48b4456f442552b62f4b1a472ce24">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c49502fb7daf2e611bf385cd1a7df818771504a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\9d5bd8736e2009f549f7a55d0647797fed283273\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_462055c68ba2eca72555ecb1b397779b2e391457\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ryan\.android\build-cache\cc73e44b58bc60ca47ad986299b5d3a41a9d8dd6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\pre-dexed\debug\classes_1b66476cea35a20d5efdfecff399830887453852.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\27048a3672259bced02299ece91a69e748a5e2c2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="125bce1fb2d481b964fabf75f0949957ebe9ecd1">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c08e1ad9210a36b6a4182d89cd20ba19d04346cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\4b5cc11a91d2fc387039b6f952acf267f811578e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8a060b90492638c5d6cefe422a3892fdcdfdcb8a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\2e9ba0aec7e103ddb6da218e4717fa9c5199640e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="12032271e6be735e811ad529cb08ff066c381640">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7442b6ea115128d8fddde9591831ccd3aacd0ada\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\3ba9a9d00d4a635373f02f3811c8a6b7dc6d6146\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b215e312bdc1ee7bfda31674eab5df8bad45c014">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_28f9e04107ac150fb1513c5bd2683351ee2c7304\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_5ec20604cafc08fae6e6b8744b6f58e7d89c0b6f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\e1d3072b8d6bd6a3959ebbf680fd71e507ca850d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4e684205744f814a73b7752545e0661330415c9e">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9c704bb399f1afd238aef3e799d0c16df63851f9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\d3819b8f539f2f2ca0c14432358b3ece5af8f0a9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b42a61cd5924f28e95894e859e6abe57847e2f3">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_db3c913395df6bc2d9cbba0fac3d779557b6ad45\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\f176543c26ecc639e6f2af24f294e045063ec289\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0caf6dc8566cc42a963b94fb13371063245b8695\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\9c58376ea613e5259025022542e061b602a23b76\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb115a110992b254f767f337da233071f6f940b8">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cb9da1d6bc8a5f1ba7132523e26e29ebfda31af1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\Desktop\BH\app\libs\gson-2.6.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\2\gson-2.6.2_ff4beb4a95d645c3b90e0cf96a99a44d3d1aba26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\2b2b85342c6f420f5f8c1b53485193188672d589\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e1d0932473ee96df52226ca95577873456f03a0e\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ryan\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_5ec20604cafc08fae6e6b8744b6f58e7d89c0b6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ryan\.android\build-cache\2b2b85342c6f420f5f8c1b53485193188672d589\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\pre-dexed\debug\classes_e1d0932473ee96df52226ca95577873456f03a0e.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_45273cc69b399f727dc4f92f4b24d8d51d3a6b93\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\acb64501282af799be3d6608f42786bf372168fb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2c8bb86a57af79032297f227aab4d25a3ea930d1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\595be5caef07e7bf29eccd79edffa2c097ad1830\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bfd85a88cf976eb2c54507cc914d8e8914c2f71e">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9f713d056d4554d3ad6a16abcb4597a279dfadd6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\04fd886212dc7e82d777d36b9e9f7dbb471637d2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ab8343c3aadefce37313ceadd8bc4db1993f2ff0">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1d2fdce64b564caedd9f0693ba86b97657a3b1a9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\df503a50603f6983615614b8796a032a6308e633\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_95c845864d280b5e2bba6c701ae79671e35a03d9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\484e710a14e8d4d71f687c8d5221bcff55954894\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb004ea36f8802bad30000e286c177691740a322">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_063c6baf504577c382484559bfc682b5a6c4a479\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_ca3fe0783565badf202bffd70e4e8f6c4bfb0b4e\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ryan\.android\build-cache\acb64501282af799be3d6608f42786bf372168fb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\pre-dexed\debug\classes_2c8bb86a57af79032297f227aab4d25a3ea930d1.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\4992701af7e3d9038c8155524d97f5b962c0a1c6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1f9df8b2bfff203397548ee400789154968adfe8">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_58f7803dfa79d806975f176e97fe4f8a1d16f2e3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\3dd2156524aae0ff2fc50d0ef0db03e165af771b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d395c5142f474891c7750f13b6a85d14682f166b">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9fb830c1644f65a0f042492476cc27a4e27e4a39\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\ba355fe643a3717efc23d9b16c0e065f78cbf07f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_10e873e4a62c9e80048213e829bcc0877121daee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\e8a1e65f7adb6205e1c4587a789f7e9d13547d40\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d0a843615f3b5fa3a080497709f5436696149a09">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_42b74e54d7f25d733383c79fd785c772f88d3cc3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\.android\build-cache\7269f4a8b898783ce336445ea46d1e3c863564cf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da5c606c36276a12a356e351882044c6b4b9e8d4">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_66ddece8a433ffe53dab2c6a68f5d963f93c36a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ryan\.android\build-cache\f176543c26ecc639e6f2af24f294e045063ec289\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\pre-dexed\debug\classes_0caf6dc8566cc42a963b94fb13371063245b8695.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ryan\.android\build-cache\df503a50603f6983615614b8796a032a6308e633\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\pre-dexed\debug\classes_95c845864d280b5e2bba6c701ae79671e35a03d9.jar" />
     </item>
 
 </items>
