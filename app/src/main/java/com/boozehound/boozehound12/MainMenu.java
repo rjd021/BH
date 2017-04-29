@@ -62,7 +62,7 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
 
 
         FunDapter<GetVenue> adapter = new FunDapter<>
-                (MainMenu.this, venuelist, R.layout.activity_main, dict);
+                (MainMenu.this, venuelist, R.layout.layout_main, dict);
 
         lvVenue = (ListView)findViewById(R.id.lvVenue);
         lvVenue.setAdapter(adapter);
