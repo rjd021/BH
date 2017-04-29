@@ -62,12 +62,12 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
                 return venue.VenueName;
             }
         });
-        dict.addStringField(R.id.Phone, new StringExtractor<GetVenue>() {
+      /*  dict.addStringField(R.id.Phone, new StringExtractor<GetVenue>() {
             @Override
             public String getStringValue(GetVenue venue, int position) {
                 return venue.Phone;
             }
-        });
+        });*/
 
 
         FunDapter<GetVenue> adapter = new FunDapter<>

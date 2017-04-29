@@ -10,20 +10,28 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 
-import java.util.Calendar;
+import com.amigold.fundapter.BindDictionary;
+import com.amigold.fundapter.FunDapter;
+import com.amigold.fundapter.extractors.StringExtractor;
+import com.kosalgeek.android.json.JsonConverter;
+import com.kosalgeek.genasync12.AsyncResponse;
+import com.kosalgeek.genasync12.PostResponseAsyncTask;
+
+import java.util.ArrayList;
 
 
 /**
  * Created by Ryan on 4/1/2017.
  */
 
-public class VenueActivity extends AppCompatActivity {
+public class VenueActivity extends AppCompatActivity implements AsyncResponse {
+    private ArrayList<GetVenue> venuelist;
+    private ListView lvVenue;
 
-
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_venue);
-
         //btn to go to map view
         Button mapButton = (Button) findViewById(R.id.location);
 
@@ -34,14 +42,15 @@ public class VenueActivity extends AppCompatActivity {
         Button call = (Button) findViewById(R.id.phone);
 
 
-        //Specials for venue
-        String[] venues = {"$2 Domestic Bottles", "$3 Wells", "Import/ Prem. Bottles", "$4 Calls"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, venues);
+        PostResponseAsyncTask taskRead = new PostResponseAsyncTask(VenueActivity.this, this);
+        taskRead.execute("http://ryandeal.me/getVenue.php");
 
-        ListView listView = (ListView) findViewById(R.id.lvVenue);
-        listView.setAdapter(adapter);
-
-
+        //Map button - open map page
+        mapButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(VenueActivity.this, MapActivity.class));
+            }
+        });
         //day of the week spinner
         Spinner spinner = (Spinner) findViewById(R.id.dayOfThWeek);
         // Create an ArrayAdapter using the string array and a default spinner layout
@@ -52,7 +61,7 @@ public class VenueActivity extends AppCompatActivity {
 
 
         // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         spinner.setAdapter(spinadapter);
 
@@ -80,28 +89,41 @@ public class VenueActivity extends AppCompatActivity {
             }
         });
 
+    }
 
+    @Override
+    public void processFinish(String s) {
+
+        venuelist = new JsonConverter<GetVenue>().toArrayList(s, GetVenue.class);
+
+        BindDictionary<GetVenue> dict = new BindDictionary<GetVenue>();
+    /*    dict.addStringField(R.id.VenueID, new StringExtractor<GetVenue>(){
+            @Override
+            public String getStringValue(GetVenue venue, int position){
+                return "" + venue.VenueID;
+            }
+       });*/
+
+        dict.addStringField(R.id.VenueName, new StringExtractor<GetVenue>() {
+            @Override
+            public String getStringValue(GetVenue venue, int position) {
+                return venue.VenueName;
+            }
+        });
+      /*  dict.addStringField(R.id.Phone, new StringExtractor<GetVenue>() {
+            @Override
+            public String getStringValue(GetVenue venue, int position) {
+                return venue.Phone;
+            }
+        });*/
+
+
+        FunDapter<GetVenue> adapter = new FunDapter<>
+                (VenueActivity.this, venuelist, R.layout.layout_main, dict);
+
+        lvVenue = (ListView) findViewById(R.id.lvVenue);
+        lvVenue.setAdapter(adapter);
 
 
     }
-
-    public String getCurrentDay(){
-
-        String daysArray[] = {"Sunday","Monday","Tuesday", "Wednesday","Thursday","Friday", "Saturday"};
-
-        Calendar calendar = Calendar.getInstance();
-        int day = calendar.get(Calendar.DAY_OF_WEEK);
-
-        return daysArray[day];
-
-    }
-
-
-    public void OnVenueClick(View view) {
-        String type = "venue click";
-        BackgroundWorker backgroundWorker = new BackgroundWorker(this);
-        backgroundWorker.execute(type);
-    }
-
-    }
-
+}
