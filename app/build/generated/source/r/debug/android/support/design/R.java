@@ -392,7 +392,7 @@ public final class R {
         public static final int button_material_dark = 0x7f0e0013;
         public static final int button_material_light = 0x7f0e0014;
         public static final int design_bottom_navigation_shadow_color = 0x7f0e0043;
-        public static final int design_error = 0x7f0e00a1;
+        public static final int design_error = 0x7f0e00a3;
         public static final int design_fab_shadow_end_color = 0x7f0e0044;
         public static final int design_fab_shadow_mid_color = 0x7f0e0045;
         public static final int design_fab_shadow_start_color = 0x7f0e0046;
@@ -403,7 +403,7 @@ public final class R {
         public static final int design_snackbar_background_color = 0x7f0e004b;
         public static final int design_textinput_error_color_dark = 0x7f0e004c;
         public static final int design_textinput_error_color_light = 0x7f0e004d;
-        public static final int design_tint_password_toggle = 0x7f0e00a2;
+        public static final int design_tint_password_toggle = 0x7f0e00a4;
         public static final int dim_foreground_disabled_material_dark = 0x7f0e004e;
         public static final int dim_foreground_disabled_material_light = 0x7f0e004f;
         public static final int dim_foreground_material_dark = 0x7f0e0050;
@@ -443,8 +443,8 @@ public final class R {
         public static final int secondary_text_disabled_material_light = 0x7f0e0077;
         public static final int switch_thumb_disabled_material_dark = 0x7f0e0078;
         public static final int switch_thumb_disabled_material_light = 0x7f0e0079;
-        public static final int switch_thumb_material_dark = 0x7f0e00a3;
-        public static final int switch_thumb_material_light = 0x7f0e00a4;
+        public static final int switch_thumb_material_dark = 0x7f0e00a5;
+        public static final int switch_thumb_material_light = 0x7f0e00a6;
         public static final int switch_thumb_normal_material_dark = 0x7f0e007a;
         public static final int switch_thumb_normal_material_light = 0x7f0e007b;
     }
@@ -744,11 +744,11 @@ public final class R {
         public static final int customPanel = 0x7f1000b1;
         public static final int decor_content_parent = 0x7f1000bf;
         public static final int default_activity_button = 0x7f1000a4;
-        public static final int design_bottom_sheet = 0x7f100120;
-        public static final int design_menu_item_action_area = 0x7f100127;
-        public static final int design_menu_item_action_area_stub = 0x7f100126;
-        public static final int design_menu_item_text = 0x7f100125;
-        public static final int design_navigation_view = 0x7f100124;
+        public static final int design_bottom_sheet = 0x7f100121;
+        public static final int design_menu_item_action_area = 0x7f100128;
+        public static final int design_menu_item_action_area_stub = 0x7f100127;
+        public static final int design_menu_item_text = 0x7f100126;
+        public static final int design_navigation_view = 0x7f100125;
         public static final int disableHome = 0x7f100029;
         public static final int edit_query = 0x7f1000c3;
         public static final int end = 0x7f100040;
@@ -770,7 +770,7 @@ public final class R {
         public static final int image = 0x7f1000a3;
         public static final int info = 0x7f10015d;
         public static final int item_touch_helper_previous_elevation = 0x7f100013;
-        public static final int largeLabel = 0x7f10011e;
+        public static final int largeLabel = 0x7f10011f;
         public static final int left = 0x7f100042;
         public static final int line1 = 0x7f100162;
         public static final int line3 = 0x7f100163;
@@ -781,7 +781,7 @@ public final class R {
         public static final int middle = 0x7f10005e;
         public static final int mini = 0x7f10004f;
         public static final int multiply = 0x7f100035;
-        public static final int navigation_header_container = 0x7f100123;
+        public static final int navigation_header_container = 0x7f100124;
         public static final int never = 0x7f100067;
         public static final int none = 0x7f100025;
         public static final int normal = 0x7f100027;
@@ -818,9 +818,9 @@ public final class R {
         public static final int showCustom = 0x7f10002b;
         public static final int showHome = 0x7f10002c;
         public static final int showTitle = 0x7f10002d;
-        public static final int smallLabel = 0x7f10011d;
-        public static final int snackbar_action = 0x7f100122;
-        public static final int snackbar_text = 0x7f100121;
+        public static final int smallLabel = 0x7f10011e;
+        public static final int snackbar_action = 0x7f100123;
+        public static final int snackbar_text = 0x7f100122;
         public static final int snap = 0x7f100033;
         public static final int spacer = 0x7f1000a9;
         public static final int split_action_bar = 0x7f100016;
@@ -832,11 +832,11 @@ public final class R {
         public static final int submenuarrow = 0x7f1000bb;
         public static final int submit_area = 0x7f1000cc;
         public static final int tabMode = 0x7f100028;
-        public static final int text = 0x7f10010f;
+        public static final int text = 0x7f100110;
         public static final int text2 = 0x7f100058;
         public static final int textSpacerNoButtons = 0x7f1000af;
         public static final int textSpacerNoTitle = 0x7f1000ae;
-        public static final int text_input_password_toggle = 0x7f100128;
+        public static final int text_input_password_toggle = 0x7f100129;
         public static final int textinput_counter = 0x7f100017;
         public static final int textinput_error = 0x7f100018;
         public static final int time = 0x7f10015b;
@@ -845,7 +845,7 @@ public final class R {
         public static final int title_template = 0x7f1000b4;
         public static final int top = 0x7f100045;
         public static final int topPanel = 0x7f1000b3;
-        public static final int touch_outside = 0x7f10011f;
+        public static final int touch_outside = 0x7f100120;
         public static final int transition_current_scene = 0x7f100019;
         public static final int transition_scene_layoutid_cache = 0x7f10001a;
         public static final int up = 0x7f10001b;

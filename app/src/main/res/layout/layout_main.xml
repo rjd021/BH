@@ -4,7 +4,6 @@
 
     <EditText
         android:id="@+id/VenueName"
-        layout_editor_absoluteX="0dp"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentLeft="true"
@@ -19,7 +18,6 @@
         android:focusableInTouchMode="false"
         android:inputType="textPersonName"
         android:onClick="OnClickVenue"
-        android:textAlignment="viewStart"
         android:textColor="@color/wallet_bright_foreground_holo_dark"
         android:textSize="20sp"
         android:textStyle="bold" />

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.amigold.fundapter.BindDictionary;
 import com.amigold.fundapter.FunDapter;
@@ -29,6 +30,10 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
         PostResponseAsyncTask taskRead = new PostResponseAsyncTask(MainMenu.this, this);
         taskRead.execute("http://ryandeal.me/getVenue.php");
 
+
+
+
+
         //Map button - open map page
         mapButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -37,12 +42,13 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
         });
     }
 
-    public void OnClickVenue (View view){
-      //  Toast.makeText(getApplicationContext(),name,Toast.LENGTH_LONG).show();
+   public void OnClickVenue (View view) {
+        //  Toast.makeText(getApplicationContext(),name,Toast.LENGTH_LONG).show();
 
         Intent appInfo = new Intent(MainMenu.this, VenueActivity.class);
         startActivity(appInfo);
     }
+
     @Override
     public void processFinish(String s) {
 
@@ -77,24 +83,34 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
         lvVenue.setAdapter(adapter);
 
 
-        //venue strings
-     /*   String[] venues = {"12th Street Bar", "Carbonero Rotisserie", "Chili's", "Mama Juanita's", "Los Pericos", "Los Ponchitos", "Yummy Yummy",};
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, venues);
 
-        final ListView listView = (ListView) findViewById(R.id.lvVenue);
-        listView.setAdapter(adapter2);
+     /* On click of venue String, open Venue page*/
 
-
-         On click of venue String, open Venue page*/
 
         lvVenue.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Intent appInfo = new Intent(MainMenu.this, VenueActivity.class);
-                startActivity(appInfo);
+
+
+                    GetVenue getVenue = venuelist.get(position);//using position int get correspondig data
+                    Intent appInfo = new Intent(MainMenu.this, VenueActivity.class);
+                    startActivity(appInfo);
+
+
+                 Toast.makeText(getApplicationContext(),getVenue.toString(), Toast.LENGTH_SHORT).show();
+
             }
+
         });
-    }
+
+
+
+}
+
+
+
+
+
 
 
 }

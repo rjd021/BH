@@ -335,8 +335,8 @@ public final class R {
         public static final int secondary_text_disabled_material_light = 0x7f0e0077;
         public static final int switch_thumb_disabled_material_dark = 0x7f0e0078;
         public static final int switch_thumb_disabled_material_light = 0x7f0e0079;
-        public static final int switch_thumb_material_dark = 0x7f0e00a3;
-        public static final int switch_thumb_material_light = 0x7f0e00a4;
+        public static final int switch_thumb_material_dark = 0x7f0e00a5;
+        public static final int switch_thumb_material_light = 0x7f0e00a6;
         public static final int switch_thumb_normal_material_dark = 0x7f0e007a;
         public static final int switch_thumb_normal_material_light = 0x7f0e007b;
     }
@@ -633,7 +633,7 @@ public final class R {
         public static final int submenuarrow = 0x7f1000bb;
         public static final int submit_area = 0x7f1000cc;
         public static final int tabMode = 0x7f100028;
-        public static final int text = 0x7f10010f;
+        public static final int text = 0x7f100110;
         public static final int text2 = 0x7f100058;
         public static final int textSpacerNoButtons = 0x7f1000af;
         public static final int textSpacerNoTitle = 0x7f1000ae;

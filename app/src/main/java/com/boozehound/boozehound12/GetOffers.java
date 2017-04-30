@@ -14,4 +14,6 @@ public class GetOffers {
     public String DrinkID;
     @SerializedName("Price")
     public String Price;
+    @SerializedName("VenueName")
+    public String VenueName;
 }

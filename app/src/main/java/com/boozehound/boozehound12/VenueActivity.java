@@ -5,11 +5,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import com.amigold.fundapter.BindDictionary;
 import com.amigold.fundapter.FunDapter;
@@ -19,6 +20,7 @@ import com.kosalgeek.genasync12.AsyncResponse;
 import com.kosalgeek.genasync12.PostResponseAsyncTask;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 
 /**
@@ -29,62 +31,40 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
     private ArrayList<GetOffers> offerlist;
     private ListView lvOffers;
 
-    private ArrayList<GetVenue> venuelist;
-    private TextView tsVenueName;
+    Spinner classSelect,daySelect;
+    ArrayAdapter adapterSpinner, days;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_venue);
+
         //btn to go to map view
         Button mapButton = (Button) findViewById(R.id.location);
-
         //btn to go back to list view
         Button backArrow = (Button) findViewById(R.id.arrowBack);
-
         //btn to call venue
         Button call = (Button) findViewById(R.id.phone);
 
 
-        PostResponseAsyncTask taskRead = new PostResponseAsyncTask(VenueActivity.this, this);
-        taskRead.execute("http://ryandeal.me/getSpecials.php");
-
-
-
         //Map button - open map page
         mapButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(VenueActivity.this, MapActivity.class));
             }
         });
-        //day of the week spinner
-        Spinner spinner = (Spinner) findViewById(R.id.dayOfThWeek);
-        // Create an ArrayAdapter using the string array and a default spinner layout
-        ArrayAdapter<CharSequence> spinadapter = ArrayAdapter.createFromResource(this,
-
-                //*****days_array in values/strings******
-                R.array.days_array, android.R.layout.simple_spinner_item);
-
-
-        // Specify the layout to use when the list of choices appears
-        spinadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Apply the adapter to the spinner
-        spinner.setAdapter(spinadapter);
-
         //Map button - open map page
         mapButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(VenueActivity.this, MapActivity.class));
             }
         });
-
         //back arrow btn - open main page
         backArrow.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(VenueActivity.this, MainMenu.class));
             }
         });
-
         //press btn to call venue
         call.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,51 +74,109 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
                 startActivity(callIntent);
             }
         });
+        PostResponseAsyncTask taskRead = new PostResponseAsyncTask(VenueActivity.this, this);
+        taskRead.execute("http://ryandeal.me/getSpecials.php");
+
+        //day of the week spinner
+        Spinner spinner = (Spinner) findViewById(R.id.dayOfThWeek);
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> spinadapter = ArrayAdapter.createFromResource(this,
+                //*****days_array in values/strings******
+                R.array.days_array, android.R.layout.simple_spinner_item);
+        // Specify the layout to use when the list of choices appears
+        spinadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Apply the adapter to the spinner
+        spinner.setAdapter(spinadapter);
+
+        Calendar calendar = Calendar.getInstance();
+        int day = calendar.get(Calendar.DAY_OF_WEEK);
+
+        switch (day) {
+            case Calendar.SUNDAY:
+                spinner.setSelection(0);
+                break;
+            case Calendar.MONDAY:
+                spinner.setSelection(1);
+                break;
+            case Calendar.TUESDAY:
+                spinner.setSelection(2);
+                break;
+            case Calendar.WEDNESDAY:
+                spinner.setSelection(3);
+                break;
+            case Calendar.THURSDAY:
+                spinner.setSelection(4);
+                break;
+            case Calendar.FRIDAY:
+                spinner.setSelection(5);
+                break;
+            case Calendar.SATURDAY:
+                spinner.setSelection(6);
+                break;
+        }
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if(position == 0){
+                SundaySpecials();
+                }
+                else if(position == 1){
+                MondaySpecials();
+                }
+                else if(position == 2){
+                TuesdaySpecials();
+                }
+                else if(position == 3){
+                WednesdaySpecials();
+                }
+                else if(position == 4){
+                ThursdaySpecials();
+                }
+                else if(position == 5){
+                FridaySpecials();
+                }
+                else if(position == 6){
+                SatdaySpecials();
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
+
+
 
     }
 
+    public void SundaySpecials(){
+        Toast.makeText(getApplicationContext(),"Hello SUNDAY",Toast.LENGTH_SHORT).show();
 
-  /*  public int GetCurrentDay(//day){
+    }
+    public void MondaySpecials(){
+        Toast.makeText(getApplicationContext(),"Hello MONDAY",Toast.LENGTH_SHORT).show();
 
-    //get current day
-    int dayCode;
-    String day;
-               Switch(day.toLowerCase){
-        case "sunday":
-                daycode = 0;
-        break;
+    }
+    public void TuesdaySpecials(){
+        Toast.makeText(getApplicationContext(),"Hello TUESDAY",Toast.LENGTH_SHORT).show();
 
-        case "monday":
-                daycode = 1;
-        break;
+    }
+    public void WednesdaySpecials(){
+        Toast.makeText(getApplicationContext(),"Hello vWEDNESDAY",Toast.LENGTH_SHORT).show();
 
-        case "tuesday":
-                daycode = 2;
-        break;
+    }
+    public void ThursdaySpecials(){
+        Toast.makeText(getApplicationContext(),"Hello THURSDAY",Toast.LENGTH_SHORT).show();
 
-        case "wednesday":
-                daycode = 3;
-        break;
+    }
+    public void FridaySpecials(){
+        Toast.makeText(getApplicationContext(),"Hello FRIDAY",Toast.LENGTH_SHORT).show();
 
-        case "thursday":
-                daycode = 4;
-        break;
+    }
+    public void SatdaySpecials(){
+        Toast.makeText(getApplicationContext(),"Hello SATURDAY",Toast.LENGTH_SHORT).show();
 
-        case "friday":
-                daycode = 5;
-        break;
-
-        case "saturday":
-                daycode = 6;
-        break;
-
-        ]
-        return dayCode;
-}
-*/
-
-
-
+    }
 
 
 
@@ -148,13 +186,8 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
         offerlist = new JsonConverter<GetOffers>().toArrayList(s, GetOffers.class);
 
         BindDictionary<GetOffers> dict = new BindDictionary<GetOffers>();
-       /* dict.addStringField(R.id.HappyHourID, new StringExtractor<GetOffers>(){
-            @Override
-            public String getStringValue(GetOffers offers, int position){
-                return "" + offers.HappyHourID;
-            }
-       });
 
+/*
         dict.addStringField(R.id.DrinkID, new StringExtractor<GetOffers>() {
             @Override
             public String getStringValue(GetOffers offers, int position) {
@@ -176,42 +209,21 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
         lvOffers.setAdapter(adapter);
 
 
+
+    }
+
+
+
+
+
     }
 
 
 
-    public void processFinishGetVenueName(String s) {
-
-        venuelist = new JsonConverter<GetVenue>().toArrayList(s, GetVenue.class);
-
-        BindDictionary<GetVenue> dict = new BindDictionary<GetVenue>();
-    /*    dict.addStringField(R.id.VenueID, new StringExtractor<GetVenue>(){
-            @Override
-            public String getStringValue(GetVenue venue, int position){
-                return "" + venue.VenueID;
-            }
-       });*/
-
-        dict.addStringField(R.id.VenueName, new StringExtractor<GetVenue>() {
-            @Override
-            public String getStringValue(GetVenue venue, int position) {
-                return venue.VenueName;
-            }
-        });
-      /*  dict.addStringField(R.id.Phone, new StringExtractor<GetVenue>() {
-            @Override
-            public String getStringValue(GetVenue venue, int position) {
-                return venue.Phone;
-            }
-        });*/
 
 
-        FunDapter<GetVenue> adapterVenue = new FunDapter<>
-                (VenueActivity.this, venuelist, R.layout.activity_venue, dict);
 
-        tsVenueName = (TextView) findViewById(R.id.venueName);
-       // tsVenueName.setText(venuelist);
 
-    }
 
-}
+
+

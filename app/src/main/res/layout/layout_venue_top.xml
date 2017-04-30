@@ -14,12 +14,13 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:background="@color/btmtoolbar"
+        android:popupBackground="@color/colorPrimary"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        tools:layout_constraintTop_creator="1" />
 
     <ImageView
         android:id="@+id/spinnerBtn"
@@ -38,30 +39,29 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/VenueName"
         android:layout_width="213dp"
         android:layout_height="38dp"
         android:layout_marginBottom="15dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
         android:cursorVisible="false"
         android:ems="10"
         android:focusable="false"
-        android:background="@android:color/transparent"
         android:focusableInTouchMode="false"
         android:fontFamily="sans-serif"
         android:inputType="textPersonName"
-        android:text="12th Street Bar"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintLeft_toRightOf="@+id/spinnerBtn"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintHorizontal_bias="0.333" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -70,11 +70,11 @@
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginTop="0dp"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@color/btmtoolbar"
-        app:layout_constraintHorizontal_bias="0.51" />
+        app:srcCompat="@color/btmtoolbar" />
 
 
 </android.support.constraint.ConstraintLayout>
