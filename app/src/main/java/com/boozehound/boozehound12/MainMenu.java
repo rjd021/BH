@@ -27,8 +27,11 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
         Button mapButton = (Button) findViewById(R.id.location);
+        Button menuButton = (Button) findViewById(R.id.menu);
+
         PostResponseAsyncTask taskRead = new PostResponseAsyncTask(MainMenu.this, this);
         taskRead.execute("http://ryandeal.me/getVenue.php");
+
 
         //Map button - open map page
         mapButton.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +39,14 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
                 startActivity(new Intent(MainMenu.this, MapActivity.class));
             }
         });
+        //Map button - open map page
+        menuButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainMenu.this, MapActivity.class));
+            }
+        });
+
+
     }
 
    public void OnClickVenue (View view) {

@@ -116,6 +116,7 @@
         android:layout_marginRight="40dp"
         android:layout_marginStart="40dp"
         android:background="@drawable/favbtn"
+        android:onClick="buttonEffect"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintLeft_toRightOf="@+id/phone"
