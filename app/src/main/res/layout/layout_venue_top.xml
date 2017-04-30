@@ -54,7 +54,7 @@
         android:fontFamily="sans-serif"
         android:inputType="textPersonName"
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
@@ -65,16 +65,36 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="381dp"
-        android:layout_height="154dp"
+        android:layout_width="379dp"
+        android:layout_height="141dp"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginTop="0dp"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@color/btmtoolbar" />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="217dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VenueName"
+        app:layout_constraintVertical_bias="0.8" />
 
 
 </android.support.constraint.ConstraintLayout>

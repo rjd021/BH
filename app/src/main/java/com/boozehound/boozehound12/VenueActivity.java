@@ -30,13 +30,25 @@ import java.util.Calendar;
 public class VenueActivity extends AppCompatActivity implements AsyncResponse {
     private ArrayList<GetOffers> offerlist;
     private ListView lvOffers;
-
+    public String result;
     Spinner classSelect,daySelect;
     ArrayAdapter adapterSpinner, days;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        PostResponseAsyncTask taskRead = new PostResponseAsyncTask(VenueActivity.this, this);
+        taskRead.execute("http://ryandeal.me/getSpecials.php");
+
+    }
+
+
+
+
+
+    @Override
+    public void processFinish(String s) {
+
         setContentView(R.layout.activity_venue);
 
         //btn to go to map view
@@ -46,22 +58,18 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
         //btn to call venue
         Button call = (Button) findViewById(R.id.phone);
 
+        //Map button - open map page
+        mapButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(VenueActivity.this, MapActivity.class));
+            }
+        });
+        //Map button - open map page
 
-        //Map button - open map page
-        mapButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(VenueActivity.this, MapActivity.class));
-            }
-        });
-        //Map button - open map page
-        mapButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(VenueActivity.this, MapActivity.class));
-            }
-        });
         //back arrow btn - open main page
         backArrow.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+
                 startActivity(new Intent(VenueActivity.this, MainMenu.class));
             }
         });
@@ -74,8 +82,7 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
                 startActivity(callIntent);
             }
         });
-        PostResponseAsyncTask taskRead = new PostResponseAsyncTask(VenueActivity.this, this);
-        taskRead.execute("http://ryandeal.me/getSpecials.php");
+
 
         //day of the week spinner
         Spinner spinner = (Spinner) findViewById(R.id.dayOfThWeek);
@@ -117,26 +124,20 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if(position == 0){
-                SundaySpecials();
-                }
-                else if(position == 1){
-                MondaySpecials();
-                }
-                else if(position == 2){
-                TuesdaySpecials();
-                }
-                else if(position == 3){
-                WednesdaySpecials();
-                }
-                else if(position == 4){
-                ThursdaySpecials();
-                }
-                else if(position == 5){
-                FridaySpecials();
-                }
-                else if(position == 6){
-                SatdaySpecials();
+                if (position == 0) {
+                    SundaySpecials();
+                } else if (position == 1) {
+                    MondaySpecials();
+                } else if (position == 2) {
+                    TuesdaySpecials();
+                } else if (position == 3) {
+                    WednesdaySpecials();
+                } else if (position == 4) {
+                    ThursdaySpecials();
+                } else if (position == 5) {
+                    FridaySpecials();
+                } else if (position == 6) {
+                    SaturdaySpecials();
                 }
             }
 
@@ -145,43 +146,6 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
             }
         });
 
-
-
-    }
-
-    public void SundaySpecials(){
-        Toast.makeText(getApplicationContext(),"Hello SUNDAY",Toast.LENGTH_SHORT).show();
-
-    }
-    public void MondaySpecials(){
-        Toast.makeText(getApplicationContext(),"Hello MONDAY",Toast.LENGTH_SHORT).show();
-
-    }
-    public void TuesdaySpecials(){
-        Toast.makeText(getApplicationContext(),"Hello TUESDAY",Toast.LENGTH_SHORT).show();
-
-    }
-    public void WednesdaySpecials(){
-        Toast.makeText(getApplicationContext(),"Hello vWEDNESDAY",Toast.LENGTH_SHORT).show();
-
-    }
-    public void ThursdaySpecials(){
-        Toast.makeText(getApplicationContext(),"Hello THURSDAY",Toast.LENGTH_SHORT).show();
-
-    }
-    public void FridaySpecials(){
-        Toast.makeText(getApplicationContext(),"Hello FRIDAY",Toast.LENGTH_SHORT).show();
-
-    }
-    public void SatdaySpecials(){
-        Toast.makeText(getApplicationContext(),"Hello SATURDAY",Toast.LENGTH_SHORT).show();
-
-    }
-
-
-
-    @Override
-    public void processFinish(String s) {
 
         offerlist = new JsonConverter<GetOffers>().toArrayList(s, GetOffers.class);
 
@@ -207,16 +171,43 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
 
         lvOffers = (ListView) findViewById(R.id.lvSpecials);
         lvOffers.setAdapter(adapter);
-
-
-
     }
 
 
 
+//Methods to show specials for specific days
 
+    public void SundaySpecials(){
+        Toast.makeText(getApplicationContext(),"Hello SUNDAY",Toast.LENGTH_SHORT).show();
 
     }
+    public void MondaySpecials(){
+        Toast.makeText(getApplicationContext(),"Hello MONDAY",Toast.LENGTH_SHORT).show();
+
+    }
+    public void TuesdaySpecials(){
+        Toast.makeText(getApplicationContext(),"Hello TUESDAY",Toast.LENGTH_SHORT).show();
+
+    }
+    public void WednesdaySpecials(){
+        Toast.makeText(getApplicationContext(),"Hello vWEDNESDAY",Toast.LENGTH_SHORT).show();
+
+    }
+    public void ThursdaySpecials(){
+        Toast.makeText(getApplicationContext(),"Hello THURSDAY",Toast.LENGTH_SHORT).show();
+
+    }
+    public void FridaySpecials(){
+        Toast.makeText(getApplicationContext(),"Hello FRIDAY",Toast.LENGTH_SHORT).show();
+
+    }
+    public void SaturdaySpecials(){
+        Toast.makeText(getApplicationContext(),"Hello SATURDAY",Toast.LENGTH_SHORT).show();
+
+    }
+
+
+}
 
 
 

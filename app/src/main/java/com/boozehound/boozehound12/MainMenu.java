@@ -3,11 +3,11 @@ package com.boozehound.boozehound12;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.amigold.fundapter.BindDictionary;
 import com.amigold.fundapter.FunDapter;
@@ -30,10 +30,6 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
         PostResponseAsyncTask taskRead = new PostResponseAsyncTask(MainMenu.this, this);
         taskRead.execute("http://ryandeal.me/getVenue.php");
 
-
-
-
-
         //Map button - open map page
         mapButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -43,7 +39,6 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
     }
 
    public void OnClickVenue (View view) {
-        //  Toast.makeText(getApplicationContext(),name,Toast.LENGTH_LONG).show();
 
         Intent appInfo = new Intent(MainMenu.this, VenueActivity.class);
         startActivity(appInfo);
@@ -84,26 +79,14 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
 
 
 
-     /* On click of venue String, open Venue page*/
-
-
         lvVenue.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-
-
-                    GetVenue getVenue = venuelist.get(position);//using position int get correspondig data
-                    Intent appInfo = new Intent(MainMenu.this, VenueActivity.class);
-                    startActivity(appInfo);
-
-
-                 Toast.makeText(getApplicationContext(),getVenue.toString(), Toast.LENGTH_SHORT).show();
+                GetVenue getVenue = venuelist.get(position);//using position int get correspondig data
+                Log.d("log", getVenue.toString());
 
             }
-
         });
-
-
 
 }
 

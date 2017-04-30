@@ -145,8 +145,8 @@
 
     <ListView
         android:id="@+id/lvSpecials"
-        android:layout_width="379dp"
-        android:layout_height="200dp"
+        android:layout_width="372dp"
+        android:layout_height="209dp"
         android:layout_marginBottom="0dp"
         android:layout_marginLeft="8dp"
         android:backgroundTint="@color/colorAccent"
@@ -154,8 +154,8 @@
         app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="311dp"
-        tools:layout_editor_absoluteX="7dp" />
+        tools:layout_editor_absoluteY="302dp"
+        tools:layout_editor_absoluteX="1dp" />
     <include
         android:id="@+id/spintest"
         layout="@layout/layout_venue_top"

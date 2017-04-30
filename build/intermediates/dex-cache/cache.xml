@@ -12,6 +12,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Ryan\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_adfffec2098596ba8b8b98bef24fb03a75faf020\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Ryan\Desktop\BH\app\libs\GenAsync.1.2.jar"
         jumboMode="false"
         optimize="true"
