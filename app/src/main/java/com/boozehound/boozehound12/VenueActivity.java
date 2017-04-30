@@ -148,7 +148,7 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
         offerlist = new JsonConverter<GetOffers>().toArrayList(s, GetOffers.class);
 
         BindDictionary<GetOffers> dict = new BindDictionary<GetOffers>();
-        dict.addStringField(R.id.HappyHourID, new StringExtractor<GetOffers>(){
+       /* dict.addStringField(R.id.HappyHourID, new StringExtractor<GetOffers>(){
             @Override
             public String getStringValue(GetOffers offers, int position){
                 return "" + offers.HappyHourID;
@@ -160,7 +160,7 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
             public String getStringValue(GetOffers offers, int position) {
                 return "" + offers.DrinkID;
             }
-        });
+        });*/
         dict.addStringField(R.id.Price, new StringExtractor<GetOffers>() {
             @Override
             public String getStringValue(GetOffers offers, int position) {
