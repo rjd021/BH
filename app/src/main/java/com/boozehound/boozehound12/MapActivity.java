@@ -1,9 +1,12 @@
 package com.boozehound.boozehound12;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.amigold.fundapter.BindDictionary;
 import com.amigold.fundapter.extractors.StringExtractor;
@@ -32,14 +35,7 @@ public class MapActivity extends AppCompatActivity  implements OnMapReadyCallbac
         PostResponseAsyncTask taskRead = new PostResponseAsyncTask(MapActivity.this, this);
         taskRead.execute("http://ryandeal.me/getLocation.php");
 
-        /*Button backArrow = (Button) findViewById(R.id.arrowBack);
-        Log.d("maps", "content view set");
 
-        backArrow.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(MapActivity.this, MainMenu.class));
-            }
-        }); */
 
         //setContentView(R.layout.activity_map);
         // Get the SupportMapFragment and request notification
@@ -57,6 +53,16 @@ public class MapActivity extends AppCompatActivity  implements OnMapReadyCallbac
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         BindDictionary<GetLocation> dict = new BindDictionary<GetLocation>();
+
+        Button backArrow = (Button) findViewById(R.id.arrowBack);
+        Log.d("maps", "content view set");
+
+        backArrow.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MapActivity.this, MainMenu.class));
+            }
+        });
+
         /*dict.addStringField(R.id.VenueID, new StringExtractor<Product>(){
             @Override
             public String getStringValue(Product product, int position){

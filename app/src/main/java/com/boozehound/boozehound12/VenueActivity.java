@@ -170,7 +170,7 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
 
 
         FunDapter<GetOffers> adapter = new FunDapter<>
-                (VenueActivity.this, offerlist, R.layout.layout_venue, dict);
+                (VenueActivity.this, offerlist, R.layout.layout_venue_list, dict);
 
         lvOffers = (ListView) findViewById(R.id.lvSpecials);
         lvOffers.setAdapter(adapter);
