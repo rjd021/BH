@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\Desktop\BH\app\libs\gson-2.6.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\2\gson-2.6.2_ff4beb4a95d645c3b90e0cf96a99a44d3d1aba26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\Desktop\BH\app\libs\GenAsync.1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0f5e48bcb980aa260360949d8c5bc5b348359ee2">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\2\GenAsync.1.2_2c82fe0be1aa505784a5934bd4d825f63c44e33b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ryan\Desktop\BH\app\libs\KGJsonConverter.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cea743dc2e193922f7e7dc34858ef15b00afc6db">
+        <dex dex="C:\Users\Ryan\Desktop\BH\app\build\intermediates\transforms\dex\debug\folders\1000\2\KGJsonConverter_3003fd4f29d1482c0e19499453bd3e53c404331c\classes.dex" />
+    </item>
+
+</items>

@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.amigold.fundapter.BindDictionary;
 import com.amigold.fundapter.FunDapter;
@@ -21,6 +20,7 @@ import java.util.ArrayList;
 public class MainMenu extends AppCompatActivity implements AsyncResponse {
     private ArrayList<GetVenue> venuelist;
     private ListView lvVenue;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +38,7 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
     }
 
     public void OnClickVenue (View view){
-        Toast.makeText(getApplicationContext(),"Hello Javatpoint",Toast.LENGTH_SHORT).show();
+      //  Toast.makeText(getApplicationContext(),name,Toast.LENGTH_LONG).show();
 
         Intent appInfo = new Intent(MainMenu.this, VenueActivity.class);
         startActivity(appInfo);
@@ -48,7 +48,7 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
 
         venuelist = new JsonConverter<GetVenue>().toArrayList(s, GetVenue.class);
 
-        BindDictionary<GetVenue> dict = new BindDictionary<GetVenue>();
+        final BindDictionary<GetVenue> dict = new BindDictionary<GetVenue>();
     /*    dict.addStringField(R.id.VenueID, new StringExtractor<GetVenue>(){
             @Override
             public String getStringValue(GetVenue venue, int position){
@@ -76,6 +76,7 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
         lvVenue = (ListView) findViewById(R.id.lvVenue);
         lvVenue.setAdapter(adapter);
 
+
         //venue strings
      /*   String[] venues = {"12th Street Bar", "Carbonero Rotisserie", "Chili's", "Mama Juanita's", "Los Pericos", "Los Ponchitos", "Yummy Yummy",};
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, venues);
@@ -85,6 +86,7 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
 
 
          On click of venue String, open Venue page*/
+
         lvVenue.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
@@ -92,18 +94,16 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
                 startActivity(appInfo);
             }
         });
-
-
-
-
-
-
-
     }
 
 
-
 }
+
+
+
+
+
+
 
 
 

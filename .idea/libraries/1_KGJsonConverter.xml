@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="1_KGJsonConverter">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/build/KGJsonConverter.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

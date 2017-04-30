@@ -45,8 +45,7 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
         //btn to call venue
         Button call = (Button) findViewById(R.id.phone);
 
-        PostResponseAsyncTask taskReadVenue = new PostResponseAsyncTask(VenueActivity.this, this);
-        taskReadVenue.execute("http://ryandeal.me/getVenue.php");
+
         PostResponseAsyncTask taskRead = new PostResponseAsyncTask(VenueActivity.this, this);
         taskRead.execute("http://ryandeal.me/getSpecials.php");
 
@@ -179,6 +178,8 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
 
     }
 
+
+
     public void processFinishGetVenueName(String s) {
 
         venuelist = new JsonConverter<GetVenue>().toArrayList(s, GetVenue.class);
@@ -212,4 +213,5 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
        // tsVenueName.setText(venuelist);
 
     }
+
 }
