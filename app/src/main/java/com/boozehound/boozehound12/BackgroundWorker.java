@@ -1,6 +1,6 @@
 package com.boozehound.boozehound12;
 
-          import android.app.AlertDialog;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 
@@ -41,8 +41,8 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
                 httpURLConnection.setDoInput(true);
                 OutputStream outputStream = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
-              //  String post_data = URLEncoder.encode("user_name","UTF-8")+"="+URLEncoder.encode(user_name,"UTF-8");
-               // bufferedWriter.write(post_data);
+                //  String post_data = URLEncoder.encode("user_name","UTF-8")+"="+URLEncoder.encode(user_name,"UTF-8");
+                // bufferedWriter.write(post_data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
                 outputStream.close();
@@ -79,12 +79,12 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
         alertDialog.setMessage(result);
         alertDialog.show();
 
-       // String temp = "login success";
+        // String temp = "login success";
 
-      //  if (result.equals(temp)) {
-       //     Intent intent = new Intent(context, Register.class);
-         //   context.startActivity(intent);
-      //  }
+        //  if (result.equals(temp)) {
+        //     Intent intent = new Intent(context, Register.class);
+        //   context.startActivity(intent);
+        //  }
 
 
     }

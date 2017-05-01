@@ -27,11 +27,16 @@ public class MapActivity extends AppCompatActivity  implements OnMapReadyCallbac
     public ArrayList<GetLocation> locationlist = new ArrayList<GetLocation>();
     String latit;
     String longit;
+    public String[] venues;
+
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-
-        //making AsyncTast reading from web url to get php file
+        Intent intent = getIntent();
+        String[] vens = intent.getStringArrayExtra("vens");
+        venues = vens;
+        super.onCreate(savedInstanceState);
+        Log.d("array_pass", vens[1]);
         PostResponseAsyncTask taskRead = new PostResponseAsyncTask(MapActivity.this, this);
         taskRead.execute("http://ryandeal.me/getLocation.php");
 

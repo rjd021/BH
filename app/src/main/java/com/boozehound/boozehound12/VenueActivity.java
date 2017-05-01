@@ -1,11 +1,9 @@
 package com.boozehound.boozehound12;
 
 import android.content.Intent;
-import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -35,13 +33,20 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
     public String result;
     Spinner classSelect,daySelect;
     ArrayAdapter adapterSpinner, days;
+    public String[] venues;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent intent = getIntent();
+        String[] id = intent.getStringArrayExtra("id");
+        venues = id;
+        super.onCreate(savedInstanceState);
+
+
         PostResponseAsyncTask taskRead = new PostResponseAsyncTask(VenueActivity.this, this);
         taskRead.execute("http://ryandeal.me/getSpecials.php");
-
     }
 
 
@@ -51,7 +56,10 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
     @Override
     public void processFinish(String s) {
 
-        setContentView(R.layout.activity_venue);
+
+
+        Toast.makeText(getApplicationContext(),venues.toString(),Toast.LENGTH_SHORT).show();
+
 
         //btn to go to map view
         Button mapButton = (Button) findViewById(R.id.location);
@@ -175,26 +183,6 @@ public class VenueActivity extends AppCompatActivity implements AsyncResponse {
         lvOffers.setAdapter(adapter);
     }
 
-    public static void buttonEffect(View button){
-        button.setOnTouchListener(new View.OnTouchListener() {
-
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getAction()) {
-                    case MotionEvent.ACTION_DOWN: {
-                        v.getBackground().setColorFilter(0xe0f47521, PorterDuff.Mode.SRC_ATOP);
-                        v.invalidate();
-                        break;
-                    }
-                    case MotionEvent.ACTION_UP: {
-                        v.getBackground().clearColorFilter();
-                        v.invalidate();
-                        break;
-                    }
-                }
-                return false;
-            }
-        });
-    }
 //Methods to show specials for specific days
 
     public void SundaySpecials(){

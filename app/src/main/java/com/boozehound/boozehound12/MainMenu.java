@@ -3,10 +3,10 @@ package com.boozehound.boozehound12;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import com.amigold.fundapter.BindDictionary;
@@ -36,7 +36,13 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
         //Map button - open map page
         mapButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainMenu.this, MapActivity.class));
+                String[] vens = new String[venuelist.size()];
+                for (int i = 0; i < venuelist.size(); i++) {
+                    vens[i] = venuelist.get(i).VenueName;
+                }
+                Intent mapIntent = new Intent(MainMenu.this, MapActivity.class);
+                mapIntent.putExtra("vens", vens);
+                startActivity(mapIntent);
             }
         });
         //Map button - open map page
@@ -45,15 +51,8 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
                 startActivity(new Intent(MainMenu.this, MapActivity.class));
             }
         });
-
-
     }
 
-   public void OnClickVenue (View view) {
-
-        Intent appInfo = new Intent(MainMenu.this, VenueActivity.class);
-        startActivity(appInfo);
-    }
 
     @Override
     public void processFinish(String s) {
@@ -89,26 +88,26 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
         lvVenue.setAdapter(adapter);
 
 
-
         lvVenue.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                GetVenue getVenue = venuelist.get(position);//using position int get correspondig data
-                Log.d("log", getVenue.toString());
+                final GetVenue getVenue = venuelist.get(position);//using position int get correspondig data
+                EditText mEditInit = (EditText) findViewById(R.id.VenueName);
+                mEditInit.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent venuIntent = new Intent(MainMenu.this, VenueActivity.class);
+                        venuIntent.putExtra("id", String.valueOf(getVenue));
+                        startActivity(venuIntent);
+
+                    }
+                });
+
 
             }
         });
-
+    }
 }
-
-
-
-
-
-
-
-}
-
 
 
 

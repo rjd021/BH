@@ -8,8 +8,8 @@ package com.google.android.gms;
 
 public final class R {
     public static final class array {
-        public static final int cast_expanded_controller_default_control_buttons = 0x7f0f0001;
-        public static final int cast_mini_controller_default_control_buttons = 0x7f0f0002;
+        public static final int cast_expanded_controller_default_control_buttons = 0x7f0f0000;
+        public static final int cast_mini_controller_default_control_buttons = 0x7f0f0001;
     }
     public static final class attr {
         public static final int adSize = 0x7f010063;

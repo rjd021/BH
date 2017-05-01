@@ -25,8 +25,6 @@
 
     <Button
         android:id="@+id/location"
-        layout_editor_absoluteX="309dp"
-        layout_editor_absoluteY="13dp"
         android:layout_width="50dp"
         android:layout_height="40dp"
         android:layout_marginEnd="8dp"
@@ -116,7 +114,6 @@
         android:layout_marginRight="40dp"
         android:layout_marginStart="40dp"
         android:background="@drawable/favbtn"
-        android:onClick="buttonEffect"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintLeft_toRightOf="@+id/phone"
