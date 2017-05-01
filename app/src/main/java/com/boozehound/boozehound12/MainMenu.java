@@ -4,9 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 
 import com.amigold.fundapter.BindDictionary;
@@ -46,11 +44,7 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
             }
         });
         //Map button - open map page
-        menuButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(MainMenu.this, MapActivity.class));
-            }
-        });
+
     }
 
 
@@ -88,24 +82,7 @@ public class MainMenu extends AppCompatActivity implements AsyncResponse {
         lvVenue.setAdapter(adapter);
 
 
-        lvVenue.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
-                final GetVenue getVenue = venuelist.get(position);//using position int get correspondig data
-                EditText mEditInit = (EditText) findViewById(R.id.VenueName);
-                mEditInit.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent venuIntent = new Intent(MainMenu.this, VenueActivity.class);
-                        venuIntent.putExtra("id", String.valueOf(getVenue));
-                        startActivity(venuIntent);
 
-                    }
-                });
-
-
-            }
-        });
     }
 }
 

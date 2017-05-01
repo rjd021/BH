@@ -21,7 +21,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
@@ -48,12 +48,12 @@
         app:layout_constraintVertical_bias="0.0" />
 
 
-    <com.facebook.login.widget.LoginButton xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    <com.facebook.login.widget.LoginButton
         android:id="@+id/button"
         style="?android:attr/textAppearanceSmall"
         android:layout_width="112dp"
         android:layout_height="36dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="4dp"
         android:layout_marginRight="150dp"
         android:layout_marginTop="8dp"
         android:clickable="true"
@@ -62,27 +62,27 @@
         android:paddingTop="10dp"
         android:textColor="#ffffff"
         android:textStyle="bold"
+        app:com_facebook_login_text="Sign in"
+        app:com_facebook_logout_text=""
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        facebook:com_facebook_login_text="Sign in"
-        facebook:com_facebook_logout_text=""
-        facebook:layout_constraintBottom_toTopOf="@+id/guideline7"
-        facebook:layout_constraintTop_toTopOf="@+id/guideline5"
-        tools:layout_editor_absoluteY="415dp"
-        facebook:layout_constraintHorizontal_bias="0.437"
-        facebook:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.6" />
 
     <Button
         android:id="@+id/guestButton"
         style="?android:textAppearanceSmall"
-        android:layout_width="180dp"
-        android:layout_height="35dp"
+        android:layout_width="160dp"
+        android:layout_height="38dp"
         android:layout_gravity="right"
         android:layout_marginBottom="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="@color/Black"
         android:clickable="true"
         android:elevation="0dp"
@@ -92,11 +92,11 @@
         android:textColor="#ffffff"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
-        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline7"
-        android:layout_marginTop="8dp" />
+        app:layout_constraintVertical_bias="0.529"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline2"
@@ -159,20 +159,18 @@
         android:id="@+id/button2"
         style="?android:textAppearanceSmall"
         android:layout_width="114dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="150dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="130dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="4dp"
         android:paddingTop="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
-        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintHorizontal_bias="0.616"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteY="413dp"
-        tools:layout_editor_absoluteX="219dp" />
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </android.support.constraint.ConstraintLayout>
